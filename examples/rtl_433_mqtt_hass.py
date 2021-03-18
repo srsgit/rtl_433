@@ -182,7 +182,7 @@ mappings = {
         "device_type": "sensor",
         "object_suffix": "H",
         "config": {
-            "device_class": "moisture",
+            "device_class": "humidity",
             "name": "Moisture",
             "unit_of_measurement": "%",
             "value_template": "{{ value|float }}"
@@ -334,7 +334,6 @@ mappings = {
         "device_type": "binary_sensor",
         "object_suffix": "tamper",
         "config": {
-            "device_class": "safety",
             "force_update": "true",
             "payload_on": "1",
             "payload_off": "0"
@@ -345,7 +344,6 @@ mappings = {
         "device_type": "binary_sensor",
         "object_suffix": "alarm",
         "config": {
-            "device_class": "safety",
             "force_update": "true",
             "payload_on": "1",
             "payload_off": "0"
@@ -386,7 +384,6 @@ mappings = {
         "device_type": "sensor",
         "object_suffix": "D",
         "config": {
-            "device_class": "depth",
             "name": "Depth",
             "unit_of_measurement": "cm",
             "value_template": "{{ value|float }}"
