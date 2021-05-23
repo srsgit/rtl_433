@@ -329,6 +329,16 @@ mappings = {
             "value_template": "{{ float(value|float) * 25.4 | round(2) }}"
         }
     },
+  
+    "maybe_rain": {
+        "device_type": "sensor",
+        "object_suffix": "RT",
+        "config": {
+            "name": "Rain Total",
+            "unit_of_measurement": "",
+            "value_template": "{{ value|float }}"
+        }
+    },
 
     "rain_rate_in_h": {
         "device_type": "sensor",
