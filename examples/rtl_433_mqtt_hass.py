@@ -121,6 +121,7 @@ mappings = {
         "config": {
             "device_class": "temperature",
             "name": "Temperature",
+            "force_update": "true",
             "unit_of_measurement": "°C",
             "value_template": "{{ value|float }}"
         }
@@ -215,6 +216,7 @@ mappings = {
         "object_suffix": "WS",
         "config": {
             "name": "Wind Speed",
+            "force_update": "true",
             "unit_of_measurement": "km/h",
             "value_template": "{{ value|float }}"
         }
@@ -275,6 +277,7 @@ mappings = {
         "object_suffix": "GS",
         "config": {
             "name": "Wind max",
+            "force_update": "true",
             "unit_of_measurement": "km/h",
             "value_template": "{{ value|float }}"
         }
@@ -295,6 +298,7 @@ mappings = {
         "object_suffix": "WD",
         "config": {
             "name": "Wind Direction",
+            "force_update": "true",
             "unit_of_measurement": "°",
             "value_template": "{{ value|float }}"
         }
@@ -337,7 +341,7 @@ mappings = {
             "name": "Rain Total",
             "force_update": "true",
             "unit_of_measurement": "mm",
-            "value_template": "{{ value|float }}"
+            "value_template": "{{ float((value - 256)|float) * 0.2794 | round(1) }}""
         }
     },
 
