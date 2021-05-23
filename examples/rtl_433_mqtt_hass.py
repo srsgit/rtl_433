@@ -335,7 +335,8 @@ mappings = {
         "object_suffix": "RT",
         "config": {
             "name": "Rain Total",
-            "unit_of_measurement": "",
+            "force_update": "true",
+            "unit_of_measurement": "mm",
             "value_template": "{{ value|float }}"
         }
     },
