@@ -164,7 +164,7 @@ mappings = {
             "device_class": "battery",
             "name": "Battery",
             "unit_of_measurement": "%",
-            "value_template": "{{ float(value|int) * 99 + 1 }}"
+            "value_template": "{{ value * 100 }}"
         }
     },
 
@@ -381,7 +381,7 @@ mappings = {
         "config": {
             "device_class": "signal_strength",
             "unit_of_measurement": "dB",
-            "value_template": "{{ value|float|round(2) }}"
+            "value_template": "{{ value|float }}"
         }
     },
 
