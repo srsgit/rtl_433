@@ -334,6 +334,17 @@ mappings = {
         }
     },
   
+    "rain": {
+      "device_type": "sensor",
+      "object_suffix": "RT",
+      "config": {
+          "name": "Rain Total",
+          "force_update": "true",
+          "unit_of_measurement": "mm",
+          "value_template": "{{ float((value - 256)|float) * 0.2794 | round(1) }}""
+      }
+    },
+  
     "maybe_rain": {
         "device_type": "sensor",
         "object_suffix": "RT",
