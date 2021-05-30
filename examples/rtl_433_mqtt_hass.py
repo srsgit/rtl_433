@@ -341,7 +341,7 @@ mappings = {
           "name": "Rain Total",
           "force_update": "true",
           "unit_of_measurement": "mm",
-          "value_template": "{{ float((value - 256)|float) * 0.2794 | round(1) }}""
+          "value_template": "{{ float((value - 256)|float) * 0.2794 | round(1) }}"
       }
     },
   
@@ -352,7 +352,7 @@ mappings = {
             "name": "Rain Total",
             "force_update": "true",
             "unit_of_measurement": "mm",
-            "value_template": "{{ float((value - 256)|float) * 0.2794 | round(1) }}""
+            "value_template": "{{ float((value - 256)|float) * 0.2794 | round(1) }}"
         }
     },
 
@@ -392,7 +392,7 @@ mappings = {
         "config": {
             "device_class": "signal_strength",
             "unit_of_measurement": "dB",
-            "value_template": "{{ value|float }}"
+            "value_template": "{{ value | float }}"
         }
     },
 
