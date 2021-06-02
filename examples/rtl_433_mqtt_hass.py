@@ -341,7 +341,7 @@ mappings = {
           "name": "Rain Total",
           "force_update": "true",
           "unit_of_measurement": "mm",
-          "value_template": "{{ float(value|float) * 0.2794 | round(1) }}"
+          "value_template": "{{ ((value | float) * 0.2794) | round(1) }}"
       }
     },
   
@@ -352,7 +352,7 @@ mappings = {
             "name": "Rain Total",
             "force_update": "true",
             "unit_of_measurement": "mm",
-            "value_template": "{{ float(value|float) * 0.2794 | round(1) }}"
+            "value_template": "{{ ((value | float) * 0.2794) | round(1) }}"
         }
     },
 
