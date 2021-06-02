@@ -248,7 +248,7 @@ mappings = {
         "config": {
             "name": "Wind Speed",
             "unit_of_measurement": "km/h",
-            "value_template": "{{ float(value|float) * 3.6 }}"
+            "value_template": "{{ float(value|float) * 3.6 | round(2) }}"
         }
     },
 
@@ -258,7 +258,7 @@ mappings = {
         "config": {
             "name": "Gust Speed",
             "unit_of_measurement": "km/h",
-            "value_template": "{{ value|float }}"
+            "value_template": "{{ value|float | round(2) }}"
         }
     },
 
@@ -289,7 +289,7 @@ mappings = {
         "config": {
             "name": "Gust Speed",
             "unit_of_measurement": "km/h",
-            "value_template": "{{ float(value|float) * 3.6 }}"
+            "value_template": "{{ float(value|float) * 3.6 | round(2) }}"
         }
     },
 
@@ -310,7 +310,7 @@ mappings = {
         "config": {
             "name": "Rain Total",
             "unit_of_measurement": "mm",
-            "value_template": "{{ value|float }}"
+            "value_template": "{{ value|float | round(1) }}"
         }
     },
 
